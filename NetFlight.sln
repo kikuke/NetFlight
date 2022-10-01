@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NetFlight", "NetFlight.vcxproj", "{BBB99C25-4DE4-486B-8D3C-63F1F5BDF79E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBB99C25-4DE4-486B-8D3C-63F1F5BDF79E}.Debug|x64.ActiveCfg = Debug|x64
+		{BBB99C25-4DE4-486B-8D3C-63F1F5BDF79E}.Debug|x64.Build.0 = Debug|x64
+		{BBB99C25-4DE4-486B-8D3C-63F1F5BDF79E}.Debug|x86.ActiveCfg = Debug|Win32
+		{BBB99C25-4DE4-486B-8D3C-63F1F5BDF79E}.Debug|x86.Build.0 = Debug|Win32
+		{BBB99C25-4DE4-486B-8D3C-63F1F5BDF79E}.Release|x64.ActiveCfg = Release|x64
+		{BBB99C25-4DE4-486B-8D3C-63F1F5BDF79E}.Release|x64.Build.0 = Release|x64
+		{BBB99C25-4DE4-486B-8D3C-63F1F5BDF79E}.Release|x86.ActiveCfg = Release|Win32
+		{BBB99C25-4DE4-486B-8D3C-63F1F5BDF79E}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68F1D98C-96C7-45D2-B7E8-2565D26B2CDC}
+	EndGlobalSection
+EndGlobal
