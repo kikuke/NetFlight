@@ -66,6 +66,21 @@ unsigned WINAPI HandleClnt(void* arg)
 	int strLen = 0, i;
 	char msg[BUF_SIZE];
 
+	WaitForSingleObject(hMutex, INFINITE);
+	msg[0] = clntCnt; msg[1] = '\n';
+	send(clntSocks[clntCnt - 1], msg, 2, 0);//플레이어 번호 부여
+	ReleaseMutex(hMutex);
+
+	if (clntCnt == MAX_CLNT)//2명 모두 왔을경우 스타트
+	{
+		SendMsg("Ready 3\n", sizeof("Ready 3\n"));
+		Sleep(1000);
+		SendMsg("Ready 2\n", sizeof("Ready 3\n"));
+		Sleep(1000);
+		SendMsg("Ready 1\n", sizeof("Ready 3\n"));
+		Sleep(1000);
+		SendMsg("Start", sizeof("Start"));
+	}
 	while ((strLen = recv(hClntSock, msg, sizeof(msg), 0)) != 0)
 		SendMsg(msg, strLen);
 
