@@ -168,6 +168,10 @@ void PlayerMove(char* buf)
 			{
 				if (map[player[buf[1] - 1][1]][i] == '@')
 				{
+					map[player[buf[1] - 1][1]][i] = '!';
+					DrawGame();
+					Sleep(2000);
+
 					system("cls");
 					puts("Player2 Win!");
 					Sleep(10000);
